@@ -1,0 +1,15 @@
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\entidade\Estado.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\visao\CadastroEstado.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\entidade\Cidade.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\validacao\Validacao.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\visao\CadastroCidade.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\utils\Utils.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\entidade\Pessoa.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\persistencia\CidadeDAO.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\persistencia\EntityManagerProvider.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\main\App.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\visao\MenuPrincipal.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\persistencia\EstadoDAO.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\exceptions\PersistenceException.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\interfaces\ICidade.java
+C:\Users\Sidnei\Documents\NetBeansProjects\CRUDBasicoAtividadeII\src\main\java\br\ifpr\paranavai\crudbasicoatividadeii\interfaces\IEstado.java
