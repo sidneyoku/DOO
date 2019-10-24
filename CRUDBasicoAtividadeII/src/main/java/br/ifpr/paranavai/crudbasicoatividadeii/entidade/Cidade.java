@@ -26,8 +26,10 @@ public class Cidade {
     private Integer id;
     private String nome;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade=CascadeType.PERSIST)
     private Estado estado;
+    
+    public Cidade(){}
 
     public Cidade(Integer id, String nome, Estado estado) {
         this.id = id;

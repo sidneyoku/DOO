@@ -202,7 +202,7 @@ public class CadastroCidade extends javax.swing.JFrame {
                 Cidade c = iCidade.findById(Integer.parseInt(campoId.getText()));
                 if (c != null) {
                     campoNome.setText(c.getNome());
-//                    comboEstado.setSelectedIndex(c.getIdEstado()-1);
+                    comboEstado.setSelectedItem(c.getIdEstado().getNome());
                 }
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(this, 

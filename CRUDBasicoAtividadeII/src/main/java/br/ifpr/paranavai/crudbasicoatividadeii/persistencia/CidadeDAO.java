@@ -6,6 +6,7 @@
 package br.ifpr.paranavai.crudbasicoatividadeii.persistencia;
 
 import br.ifpr.paranavai.crudbasicoatividadeii.entidade.Cidade;
+import br.ifpr.paranavai.crudbasicoatividadeii.entidade.Estado;
 import br.ifpr.paranavai.crudbasicoatividadeii.exceptions.PersistenceException;
 import br.ifpr.paranavai.crudbasicoatividadeii.interfaces.ICidade;
 import java.util.List;
@@ -20,7 +21,10 @@ public class CidadeDAO implements ICidade {
 
     @Override
     public void save(Cidade cidade) {
+        Estado estado = em.getReference(Estado.class, cidade.getIdEstado().getId());
+        cidade.setIdEstado(estado);
         em.getTransaction().begin();
+//        em.persist(cidade);
         em.merge(cidade);
         em.getTransaction().commit();
     }

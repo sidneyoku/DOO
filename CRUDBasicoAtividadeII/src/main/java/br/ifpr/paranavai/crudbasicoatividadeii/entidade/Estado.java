@@ -30,7 +30,8 @@ public class Estado {
     private String nome;
     private String sigla;
     
-    @OneToMany(mappedBy="estado", cascade=CascadeType.MERGE, orphanRemoval=true)
+//    @OneToMany(mappedBy="estado", cascade=CascadeType.MERGE, orphanRemoval=true)
+    @OneToMany(mappedBy="estado", cascade=CascadeType.MERGE)
     private List<Cidade> cidades;
     
     public Estado() {}
