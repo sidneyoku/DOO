@@ -17,7 +17,7 @@ import javax.persistence.NamedQuery;
 @NamedQueries({
     @NamedQuery(name="Cidade.getEstado", query="select c.estado from Cidade c"),
     @NamedQuery(name="Cidade.getNomes", query="select c.nome from Cidade c"),
-    @NamedQuery(name="Cidade.getAll", query="select c.id, c.estado, c.nome from Cidade c"),
+    @NamedQuery(name="Cidade.getAll", query="select c.id, c.estado, c.nome from Cidade c")
 })
 public class Cidade {
     

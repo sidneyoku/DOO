@@ -1,6 +1,7 @@
 package br.ifpr.paranavai.crudbasicoatividadeii.interfaces;
 
 import br.ifpr.paranavai.crudbasicoatividadeii.entidade.Cidade;
+import br.ifpr.paranavai.crudbasicoatividadeii.entidade.Estado;
 import java.util.List;
 
 /**
@@ -13,8 +14,8 @@ public interface ICidade {
     List<Object[]> getAll();	
     List<Cidade> getCidadeByNome(String nome);
     Cidade findById(Integer id);
-    List<Cidade> getCidadeByIdEstado(Integer idEstado);
-    Cidade getCidadeByNomeIdEstado(String nome, Integer idEstado);
+    List<Cidade> getCidadeByIdEstado(Estado estado);
+    Cidade getCidadeByNomeIdEstado(String nome, Estado estado);
     void init();
     
 }

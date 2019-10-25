@@ -20,7 +20,7 @@ import javax.persistence.OneToMany;
 @NamedQueries({
 @NamedQuery(name="Estado.getSiglas", query="select e.sigla from Estado e"),
 @NamedQuery(name="Estado.getNomes", query="select e.nome from Estado e"),
-@NamedQuery(name="Estado.getAll", query="select e.sigla, e.nome from Estado e"),
+@NamedQuery(name="Estado.getAll", query="select e.sigla, e.nome, e.id from Estado e"),
 })
 public class Estado {
     
