@@ -55,4 +55,27 @@ public class Validacao {
         return msg;
     }
     
+    public static List<String> ValidaCamposProduto(String nome, String descricao, 
+            int qtdEntrada, String codBarras) {
+        List<String> msg = new ArrayList<>();
+        
+        if(nome.isEmpty()) {
+            msg.add("Preencher o nome.");
+        } 
+        
+        if(descricao.isEmpty()) {
+            msg.add("Preencher a descrição.");
+        }
+        
+        if(qtdEntrada < 0) {
+            msg.add("Preencher a quantidade de entrada.");
+        }
+        
+        if(codBarras.isEmpty()) {
+            msg.add("Preencher o código de barras.");
+        }
+        
+        return msg;
+    }
+    
 }

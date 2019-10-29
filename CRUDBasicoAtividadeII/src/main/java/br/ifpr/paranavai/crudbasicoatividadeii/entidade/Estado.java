@@ -1,5 +1,6 @@
 package br.ifpr.paranavai.crudbasicoatividadeii.entidade;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -22,7 +23,7 @@ import javax.persistence.OneToMany;
 @NamedQuery(name="Estado.getNomes", query="select e.nome from Estado e"),
 @NamedQuery(name="Estado.getAll", query="select e.sigla, e.nome, e.id from Estado e"),
 })
-public class Estado {
+public class Estado implements Serializable {
     
     @Id 
     @GeneratedValue(strategy=GenerationType.AUTO)

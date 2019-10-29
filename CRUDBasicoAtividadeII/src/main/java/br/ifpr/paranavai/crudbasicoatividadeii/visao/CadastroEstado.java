@@ -59,6 +59,7 @@ public class CadastroEstado extends javax.swing.JFrame {
         botaoDeletar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Estado");
 
         jLabel1.setText("Nome:");
 

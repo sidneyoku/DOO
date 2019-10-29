@@ -12,7 +12,7 @@ import javax.persistence.EntityManager;
  * @author Sidney
  */
 public class PessoaDAO implements IPessoa {    
-    private static EntityManager em = EntityManagerProvider.getInstancia();
+    private static final EntityManager em = EntityManagerProvider.getInstancia();
     
     @Override
     public void save(Pessoa pessoa) {
@@ -46,7 +46,7 @@ public class PessoaDAO implements IPessoa {
     }
 
     @Override
-    public List<Pessoa> getEstadosByNome(String nome) {
+    public List<Pessoa> getPessoaByNome(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -65,6 +65,7 @@ public class CadastroPessoa extends javax.swing.JFrame {
         botaoDeletar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Pessoa");
 
         jLabel1.setText("Nome:");
 
@@ -382,7 +383,7 @@ public class CadastroPessoa extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane painelPessoas;
     // End of variables declaration//GEN-END:variables
-
+       
     private void preencherComboEstado() {
         try {
             IEstado iEstado = new EstadoDAO();

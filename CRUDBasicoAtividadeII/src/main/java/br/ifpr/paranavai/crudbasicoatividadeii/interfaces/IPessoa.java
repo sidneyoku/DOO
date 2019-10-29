@@ -12,7 +12,7 @@ public interface IPessoa {
     void save(Pessoa pessoa);
     void remove(Pessoa pessoa);	
     List<Object[]> getAll();	
-    List<Pessoa> getEstadosByNome(String nome);
+    List<Pessoa> getPessoaByNome(String nome);
     Pessoa findById(Integer id);
     void init();   
 }

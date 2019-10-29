@@ -23,7 +23,7 @@ import javax.persistence.OneToOne;
 public class Pessoa implements Serializable {
     
     @Id 
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue
     private Integer id;
     private String nome;
     @OneToOne(cascade=CascadeType.PERSIST)
