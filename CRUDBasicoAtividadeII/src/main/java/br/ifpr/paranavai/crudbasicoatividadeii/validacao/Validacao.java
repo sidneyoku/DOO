@@ -78,4 +78,28 @@ public class Validacao {
         return msg;
     }
     
+    public static List<String> ValidaCamposPedido(String dataPedido) {
+        List<String> msg = new ArrayList<>();
+        
+        if(dataPedido.isEmpty()) {
+            msg.add("Preencher a data do pedido.");
+        }
+        
+        return msg;
+    }
+    
+    public static List<String> ValidaCamposItemPedido(int idProduto, int qtdItemPedido) {
+        List<String> msg = new ArrayList<>();
+        
+        if(idProduto < 0) {
+            msg.add("Preencher o id do produto.");
+        }
+        
+        if(qtdItemPedido < 0) {
+            msg.add("Preencher a quantidade do item do pedido.");
+        }
+        
+        return msg;
+    }
+    
 }

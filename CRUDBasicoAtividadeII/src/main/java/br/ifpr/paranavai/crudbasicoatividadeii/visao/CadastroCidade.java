@@ -271,8 +271,8 @@ public class CadastroCidade extends javax.swing.JFrame {
             SwingUtilities.invokeLater(newAtualizaCidadesAction());
             habilitarDesabilitarCampos(null);
         } else {
-            JOptionPane.showMessageDialog(this, "Preencher o campo Id v√°lido.", 
-                    "Valida√ß√£o", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Preencher o campo Id v·lido.", 
+                    "ValidaÁ„o", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_botaoDeletarActionPerformed
 

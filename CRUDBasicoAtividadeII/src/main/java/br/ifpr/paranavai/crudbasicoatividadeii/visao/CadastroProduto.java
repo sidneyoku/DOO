@@ -296,20 +296,20 @@ public class CadastroProduto extends javax.swing.JFrame {
 
     private void botaoDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoDeletarActionPerformed
         if(Utils.isNumber(campoId.getText())) {
-//            try {
-//                IPessoa iPessoa = new PessoaDAO();
-//                Pessoa p = iPessoa.findById(Integer.parseInt(campoId.getText()));
-//                
-//                if (p != null)
-//                    iPessoa.remove(p);
-//                
-//            } catch (Exception ex) {
-//                JOptionPane.showMessageDialog(this, 
-//                        ex.getMessage(), "Erro ao excluir Pessoa.", JOptionPane.ERROR_MESSAGE);
-//            }
-//            
-//            SwingUtilities.invokeLater(newAtualizaPessoasAction());
-//            habilitarDesabilitarCampos(null);
+            try {
+                IProduto iProduto = new ProdutoDAO();
+                Produto p = iProduto.findById(Integer.parseInt(campoId.getText()));
+                
+                if (p != null)
+                    iProduto.remove(p);
+                
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, 
+                        ex.getMessage(), "Erro ao excluir Produto.", JOptionPane.ERROR_MESSAGE);
+            }
+            
+            SwingUtilities.invokeLater(newAtualizaProdutosAction());
+            habilitarDesabilitarCampos(null);
         } else {
             JOptionPane.showMessageDialog(this, "Preencher o campo Id válido.", 
                     "Validação", JOptionPane.WARNING_MESSAGE);

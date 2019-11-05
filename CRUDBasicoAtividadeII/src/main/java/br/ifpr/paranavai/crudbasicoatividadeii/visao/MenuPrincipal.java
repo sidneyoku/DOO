@@ -36,6 +36,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         itemMenuCidade = new javax.swing.JMenuItem();
         itemMenuPessoa = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         menuAjuda = new javax.swing.JMenu();
         itemMenuSobre = new javax.swing.JMenuItem();
 
@@ -75,6 +76,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
         menuCadastros.add(jMenuItem1);
+
+        jMenuItem2.setText("Pedido");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemMenuPedidoActionPerformed(evt);
+            }
+        });
+        menuCadastros.add(jMenuItem2);
 
         jMenuBar1.add(menuCadastros);
 
@@ -138,6 +147,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         cadastroProduto.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
     }//GEN-LAST:event_itemMenuProdutoActionPerformed
 
+    private void itemMenuPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemMenuPedidoActionPerformed
+        CadastroPedido cadastroPedido = new CadastroPedido();
+        cadastroPedido.setLocationRelativeTo(null);
+        cadastroPedido.setVisible(true);
+        cadastroPedido.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+    }//GEN-LAST:event_itemMenuPedidoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -183,6 +199,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem itemMenuSobre;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenu menuAjuda;
     private javax.swing.JMenu menuCadastros;
     // End of variables declaration//GEN-END:variables
